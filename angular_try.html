@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app>
+    <head>
+        <script src="/angular.min.js.txt"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+        <title>Angular_Form</title>
+    </head>
+    <body>
+        <div class="container">
+            <h2 style = "text-align: center;">Regestration Page</h2>
+            <form name="myForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" placeholder="Enter name" name="name" ng-model = "name" required>
+                    <span ng-show = "myForm.name.$touched && myForm.name.$invalid" style="color: red;"> *please enter your name</span>
+                </div>
+    
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" placeholder="Enter email" name="email" ng-model = "email" required>
+                    <span ng-show = "myForm.email.$touched && myForm.email.$invalid" style="color: red;">*please enter your emailId</span>
+                </div>
+
+                <div class="form-group">
+                    <label for ="mob">Phone Number:</label>
+                    <input type="tel" pattern="[0-9]{10}" class="form-control" placeholder="Enter contact number" name="num" ng-model = "num" required>
+                    <span ng-show = "myForm.num.$touched && myForm.num.$invalid" style="color: red;"> *please enter your contact number</span>  
+                </div>
+                
+                <div class = "form-group">
+                    <label for = "pass">Password:</label>
+                    <input type="password" class="form-control" placeholder="Enter Password" name = "pass" ng-model = "pass" required>
+                    <span ng-show = "myForm.pass.$touched && myForm.pass.$invalid" style="color : red">*please enter password</span>
+                </div>
+
+              <button type="submit" class="btn btn-default" style= "background-color: skyblue; color: white;">Register</button>
+            </form>
+          </div>
+          
+    </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Validate</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    </head>
+
+    <style>
+        p{
+            color: red;
+        }
+    </style>
+    <body>
+        <div class = "cotainer">
+            <h1 style="text-align: center;">Form</h1>
+            <form style="margin-left: 13%; margin-right: 13%;">
+                <div class="form-group">
+                    <label>Email:</label>
+                    <input class="form-control" id = "email" type="email" onblur="emailValidate()" required>
+                    <p id = "email-msg"></p>
+                </div>
+                <div class="form-group">
+                    <label>Phone Number:</label>
+                    <input class="form-control" id = "num" type="tel" onblur="numValidate()" required>
+                    <p id = "num-msg"></p>
+                </div>
+                <div class="form-group">
+                    <label>Pin-Code:</label>
+                    <input class="form-control" id = "pin" type="number" onblur="pinValidate()" required>
+                    <p id = "pin-msg"></p>
+                </div>
+                <div class="form-group">
+                    <label>Password:</label>
+                    <input class="form-control" id = "pwd" type="password" onblur="pssValidate()" required>
+                    <p id = "pwd-msg"></p>
+                </div>
+            </form>
+        </div>
+
+        <script>
+            var eid = document.getElementById("email");
+            var pass = document.getElementById("pwd");
+            var phone = document.getElementById("num");
+            var code = document.getElementById("pin");
+            var contact = document.getElementById("num-msg");
+            var pincode = document.getElementById("pin-msg");
+            var password = document.getElementById("pwd-msg");
+            var email = document.getElementById("email-msg");
+            var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+
+            function emailValidate(){
+                if(!eid.value.match(reg)){
+                    email.innerHTML = "Incorrect Email-Id";
+                }
+                else{
+                    email.innerHTML = "";
+                }
+            }
+            function pssValidate(){
+                if(pass.value.length >= 8){
+                    console.log("Strong Password!");
+                    password.innerHTML = "Strong Password!";
+                }
+                else{
+                    console.log("Weak Password!");
+                    password.innerHTML = "Weak Password!";
+                }
+            }
+            
+            var num = /[0-9]/;
+            function pinValidate(){
+                if(!(code.value.match(num) && code.value.length == 6)){
+                    pincode.innerHTML = "Incorrect Pin Code";
+                }
+                else{
+                    pincode.innerHTML = "";
+                }
+            }
+
+            function numValidate(){                
+                if(!((phone.value.match(num)) && (phone.value.length == 10))){
+                    contact.innerHTML = "Incorrect Contact Number!";
+                }
+                else{
+                    contact.innerHTML = "";
+                }
+            }
+        </script>
+    </body>
+</html>
