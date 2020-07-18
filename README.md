@@ -14,3 +14,4 @@
       
 5) trywebsite.html & trywebsite.css:
       This is a template for Vegan Food Store
+      The new text  has been added in develop-1 branch
