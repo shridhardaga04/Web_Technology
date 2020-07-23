@@ -8,5 +8,5 @@
 3) Sign-Up Page:
       This is basic responsive sign up page 
       
-4) trywebsite.html & trywebsite.css:
+4) Vegan Store Template:
       This is a template for Vegan Food Store
