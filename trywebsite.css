@@ -1,0 +1,603 @@
+/* Code by Shridhar
+Referance by edyoda.com */
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    width: 100%;
+}
+
+#section1{
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://edyoda.s3.ap-south-1.amazonaws.com/public/landing-background.png);
+    background-position: left;
+    background-size: cover;
+    display: block;
+}
+
+nav{
+    background-color: white;
+    width: 100%;
+    height: 77px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 28px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+}
+
+nav > img{
+    width: 40px;
+}
+
+div{
+    display: block;
+}   
+
+#menu{
+    display: inline-block;
+    position: relative;
+}
+
+#menu-item{
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+    margin-right: 24px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#dropdown{
+    width: 150px;
+    border-top: 2px solid rgb(170, 210, 54);
+    padding: 20px;
+    position: absolute;
+    right: 24px;
+    background-color: white;
+    box-shadow: 0 2px 5px #ccc;
+    display: none;
+}
+
+#dropdown a{
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
+    cursor: pointer;
+    color: black;
+}
+
+#dropdown a:hover{
+    color: rgb(170, 210, 54);
+}
+
+#menu:hover #dropdown{
+    display: block ;
+}
+
+#buy-now{
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(170, 210, 54);
+    padding: 9px 34px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    border: 0;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.sec1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#section1 h1{
+    font-size: 44px;
+    font-weight: 600;
+    letter-spacing: 8.8px;
+    line-height: 1.2;
+    text-align: center;
+    padding-top: 20%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+#section1 p{
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    text-align: center;
+    margin-top: 40px;
+    color: #8b8b99;
+    padding-bottom: 20%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+#section2{
+    text-align: center;
+    color: white;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    width: 100%;
+}
+
+.step {
+    padding: 112px 48px;
+}
+
+.step i{
+    font-size: 96px;
+    translate: font-size;
+    transition-duration: 0.3s;
+}
+.step i:hover{
+    font-size: 101px;
+}
+
+.step p{
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+    margin-top: 0;
+}
+
+.step h3{
+    font-weight: 600;
+    font-size: 24px;
+}
+
+#section3{
+    background-color: #f7eee2;
+    text-align: center;
+    padding: 2% 0;
+    width: 100%;
+}
+
+.sec3{
+    padding-top: 3%;
+    margin: 0 7%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+#fresh-food{
+    color: #91ac41;
+    font-family: 'Caveat',cursive;
+    font-size: 20px;
+    margin: 0;
+    margin-top: 35px;
+}
+
+#section3 h1{
+    margin-top: 7px;
+    margin-bottom: 0;
+    font-size: 44px;
+    font-weight: 600;
+}
+
+#description{
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: #8b8b99;
+}
+
+.sec3 i{
+    background-color: #e3b375;
+    font-size: 60px;
+    border-radius: 50%;
+    padding: 15%;
+    color: white;
+    translate: font-size;
+    transition-duration: 0.3s;
+    
+}
+
+.sec3 i:hover{
+    font-size: 65px;
+}
+
+.sec3 h3{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.sec3 div{
+    padding: 8%;
+}
+
+#section4{
+    text-align: center;
+    padding: 2% 0;
+    width: 100%;
+}
+
+#section4 h1{
+    margin-top: 7px;
+    margin-bottom: 0;
+    font-size: 44px;
+    font-weight: 600;
+}
+
+.sec4{
+    padding-top: 3%;
+    padding-bottom: 2%;
+    display: flex;
+    justify-content: stretch;
+    margin: 2% 10%;
+}
+
+.sec4 div{
+    display: block;
+}
+
+.card{
+    background-color: #f5f6fb;
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+    padding: 5%;
+    margin-left: 30px;
+}
+
+.card:hover{
+    box-shadow: 2px 2px 5px #8b8b99;
+}
+
+.card img{
+    border-radius: 50%;
+    width: 80px;
+}
+
+.card p{
+    font-size: 14px;
+    font-weight: 0.5px;
+    font-style: italic;
+    color: #8b8b99;
+    margin-top: 30px;
+}
+
+.card h4{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+#desig{
+    font-size: 12px;
+    font-weight: 0.5px;
+    font-style: italic;
+    color: #8b8b99;
+    margin-top: 0;
+}
+
+#section5{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    width: 100%;
+}
+
+.left img{
+    width: 100%;
+    height: 100%;
+}
+
+.right{
+    background-image: url(https://edyoda.s3.ap-south-1.amazonaws.com/public/strawberry-white.png);
+    width: 100%;
+    height: 100%;
+    text-align: start;
+}
+
+.right h1{
+    margin-top: 30%;
+    margin-bottom: 20px;
+    font-size: 44px;
+    font-weight: 600;
+    margin-left: 20%;
+}
+
+.right p{
+    font-size: 14px;
+    font-weight: 0.5px;
+    color: #8b8b99;
+    margin: 0 20%;
+}
+
+#email{
+    width: 60%;
+    height: 30px;
+    margin-left: 20%;
+    margin-top: 10%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    padding: 12px;
+    color: #8b8b99;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: white;
+}
+
+.sub{
+    color: white;
+    font-weight: 400;
+    background-color: #f69dad;
+    cursor: pointer;
+    padding: 16px 42px;
+    margin-left: 20%;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-top: 16px;
+}
+
+.sub:hover{
+    color: #f69dad;
+    background-color: transparent;
+    border: 1px solid #f69dad;
+}
+
+#section6{
+    background-color: #f6fcfa;
+    width: 100%;
+}
+
+#sec6{
+    max-width: 1140px;
+    padding: 100px 0;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: stretch;
+}
+
+#sec6 div{
+    display: block;
+}
+
+.stat{
+    width: 25%;
+    padding: 0 64px;
+}
+
+#section6 h1{
+    font-size: 44px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+#section6 p{
+    top: 0;
+    font-size: 14px;
+    font-weight: 0.5px;
+    color: #57e3b5;;
+    font-style: italic;
+}
+
+#section7{
+    width: 100%;
+    padding: 2%;
+    text-align: center;
+}
+
+#section7 h1{
+    margin-top: 7px;
+    margin-bottom: 0;
+    font-size: 44px;
+    font-weight: 400;
+    color: #8b8b99;
+}
+
+#line{
+    width: 96px;
+    height: 1px;
+    background-color: #e4b476;
+    margin: 36px auto;
+}
+
+#section7 iframe{
+    width: 100%;
+    height: 425px;
+}
+
+#section8{
+    width: 100%;
+}
+
+#team{
+    color: #91ac41;
+    font-family: 'Caveat',cursive;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+#section8 h1{
+    font-size: 44px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#section8 h3{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+#section8 p{
+    line-height: 2;
+    font-weight: 500;
+}
+.sec8{
+    max-width: 1140px;
+    padding: 5% 0;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+}
+
+.address,.meet{
+    padding-right: 15%;
+}
+#touch{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 5%;
+    border: 1px solid #efeff3;
+    border-radius: 4px;
+    outline: none;
+    padding: 12px;
+    color: #8b8b99;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: white;
+}
+
+.meet textarea{
+    height: 70px;
+    width: 100%;
+    margin-bottom: 5%;
+    border: 1px solid #efeff3;
+    border-radius: 4px;
+    outline: none;
+
+    padding: 12px;
+    color: #8b8b99;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: white;
+}
+
+#submit-now{
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(170, 210, 54);
+    padding: 15px 34px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    border: 0;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+#section9{
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    padding: 2%;
+    margin-bottom: 0;
+}
+
+@media (max-width: 720px){
+
+    #menu{
+        display: none;
+    }
+    #menu-item{
+        display: none;
+    }
+
+    #section1 h1{
+        font-size: 30px;
+        font-weight: 500;
+        letter-spacing: 6.8px;
+        line-height: 1;
+        padding-top: 3%;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    #section1 p{
+        padding-top: 3%;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    #section2{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    
+    .sec3{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    #section3 h1{
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    .sec4{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #section4 h1{
+        font-size: 30px;
+        font-weight: 500;
+    }
+    
+
+    #section5{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .card{
+        margin-bottom: 10%;
+    }
+
+    .right h1{
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    .sub{
+        margin-bottom: 15%;
+    }
+    
+    #sec6{
+        display: flex;
+        flex-direction: column;
+        padding: 0 0 7% 20%;;
+    }
+    
+    #section7 h{
+        font-size: 30px;
+        font-weight: 400;
+    }
+    #section7 iframe{
+        margin-top: 0;
+        height: 325px;
+    }
+    
+    .sec8{
+        display: grid;
+        grid-template-columns: 100%;
+        margin-top: 0;
+        padding: 0 0 7% 20%;
+    }
+
+    #section8 h1{
+        font-size: 30px;
+        font-weight: 500;
+    }
+}
