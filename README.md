@@ -8,7 +8,6 @@
 3) Sign-Up Page:
       This is basic responsive sign up page 
       
-4) trywebsite.html and trywebsite.css:
-      This is a template for Vegan Food Store
+4) Template for Vegan Food Store
       
 5) TODO -List
