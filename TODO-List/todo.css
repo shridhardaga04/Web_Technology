@@ -13,6 +13,14 @@ body{
    text-align: center;
 }
 
+h1{
+    color: green;
+}
+
+h1:hover{
+    color: rgba(0, 200, 0, 0.5);
+}
+
 .main input{
     width: 30%;
     height: 25px;
