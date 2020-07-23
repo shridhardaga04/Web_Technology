@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    text-align: center;
+    background-color: lightcyan;
+}
+
+.btn-list{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+#btn{
+ margin: 0.75%;
+ width: 70px;
+ height: 70px;
+ cursor: pointer;
+ text-align: center;
+ background-color: lightblue;
+ outline: none;
+ border: 1px solid blue;
+ font-size: 20px;
+ font-weight: bold;
+}
+
+#btn:hover{
+    color: blue;
+}
+
+/* p{
+    margin-top: 3%;
+    font-size: 18px;
+} */
+
+#display{
+    margin-top: 2%;
+    font-size: 20px;
+    color: blue;
+    font-style: italic;
+}
