@@ -1,0 +1,37 @@
+Code by Shridhar Daga
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="calculator.css" type="text/css" rel="stylesheet"/>
+    <title>Calculator</title>
+</head>
+<body>
+    <div id="main">
+        <h1>My Calculator</h1>
+        <input id="clc-ip" type="text" name="input" autofocus onselectstart="return false">
+        <div id="clc-btn">
+            <button class="btn" onclick="dis('7')" >7</button>
+            <button class="btn" onclick="dis('8')" >8</button>
+            <button class="btn" onclick="dis('9')" >9</button>
+            <button class="btn" onclick="dis('+')" >+</button>
+            <button class="btn" onclick="dis('4')" >4</button>
+            <button class="btn" onclick="dis('5')" >5</button>
+            <button class="btn" onclick="dis('6')" >6</button>
+            <button class="btn" onclick="dis('-')" >-</button>
+            <button class="btn" onclick="dis('1')" >1</button>
+            <button class="btn" onclick="dis('2')" >2</button>
+            <button class="btn" onclick="dis('3')" >3</button>
+            <button class="btn" onclick="dis('*')" >*</button>
+            <button class="btn" onclick="clr()" >C</button>
+            <button class="btn" onclick="dis('0')" >0</button>
+            <button class="btn" onclick="solve()" >=</button>
+            <button class="btn" onclick="dis('/')" >/</button>
+        </div>
+    </div>
+
+    <script src="calculator.js" type="text/javascript"></script>
+</body>
+</html>
