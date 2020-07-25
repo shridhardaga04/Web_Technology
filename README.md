@@ -11,3 +11,5 @@
 4) Template for Vegan Food Store
       
 5) TODO -List
+
+6) Basic Calculator
