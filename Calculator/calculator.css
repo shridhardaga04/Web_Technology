@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    background-color: lightgray;
+}
+
+#main{
+    background-color: rgb(59, 58, 58);
+    margin: 2% 30%;
+    border: 2px solid black;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+#clc-ip{
+    margin-top: 1%;
+    width: 97.8%;
+    padding: 2% 1%;
+    outline: none;
+    text-align: right;
+    font-size: 2rem;
+    border: 2px solid rgb(59, 58, 58);
+}
+
+#clc-btn{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.btn{
+    background-color: rgb(59, 58, 58);
+    border: 1px solid white;
+    outline: none;
+    text-align: center;
+    font-size: 20px;
+    padding: 20% 0;
+    color: white;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+
+@media (max-width : 420px){
+
+    h1, .btn, #clc-ip{
+        font-size: 16px;
+    }
+}
