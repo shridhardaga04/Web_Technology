@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.ONlLO3ljDRyiJ30ZqTaH2gHaE8%26pid%3DApi&f=1');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#finalScore{
+    position: absolute;
+    width: 30%;
+    margin-left: 32%;
+    margin-top: 15%;
+    text-align: center;
+    font-size: 35px;
+    background-color: rgba(255,255,255,0.7);
+    display: none;
+}
+
+#replay{
+    padding: 2% 4%;
+    margin-bottom: 2%;
+    font-size: 20px;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.intro{
+    display: flex;
+    flex-direction: row;
+    column-gap: 8%;
+    justify-content: center;
+    margin : 5% 0;
+    font-size: 35px;
+}
+
+.intro > div{
+    text-align: center;
+}
+
+.btn{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+.btn:hover{
+    box-shadow: 2px 2px 5px lightyellow;
+    animation: shake 0.5s;
+}
+@keyframes shake {
+    0% { transform:  rotate(0deg); }
+    10% { transform: rotate(-2deg); }
+    20% { transform: rotate(2deg); }
+    30% { transform: rotate(0deg); }
+    40% { transform: rotate(2deg); }
+    50% { transform: rotate(-2deg); }
+    60% { transform: rotate(0deg); }
+    70% { transform: rotate(-2deg); }
+    80% { transform: rotate(2deg); }
+    90% { transform: rotate(0deg); }
+    100% {transform: rotate(-2deg); }
+  }
+
+  i{
+      color: yellow;
+  }
