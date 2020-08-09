@@ -20,3 +20,5 @@
             2. Quiz
             3. Watch Page (Media)
             4. Multistep Form
+            
+8) Rock-Paper-Scissor game implemented using Javascript
