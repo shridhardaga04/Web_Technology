@@ -72,3 +72,12 @@ body{
   i{
       color: yellow;
   }
+
+  @media (max-width:500px){
+    body{
+        font-size: 16px;
+    }
+    #finalScore{
+        width: 50%;
+    }
+  }
