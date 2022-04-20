@@ -1,0 +1,133 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: auto;
+    height: 550px;
+    left: 2%;
+    top: 0;
+    background: #1F2937;
+    /* background: #ECFDF5; */
+}
+
+h1 {
+    position: absolute;
+    width: 354px;
+    height: 80px;
+    left: 52px;
+    top: 118px;
+    font-family: Karla;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 100%;
+    /* or 100% */
+    letter-spacing: -0.025em;
+    color: #FFFFFF;
+    /* color: black */
+}
+
+#sp{
+    color: #10B981;
+}
+
+p {
+    position: absolute;
+    width: 372px;
+    height: 28px;
+    left: 52px;
+    top: 208px;
+
+    /* text-xl/leading-7/font-normal */
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    /* identical to box height, or 140% */
+    /* Medium grey */
+    color: #D5D4D8;
+    /* color: #6B7280; */
+}
+
+button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 17px 9px 15px;
+
+    position: absolute;
+    width: 223px;
+    height: 42px;
+    left: 52px;
+    top: 287px;
+    cursor: pointer;
+
+    background: #10B981;
+    /* shadow/sm */
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    color: white;
+}
+
+hr{
+    position: absolute;
+    width: 446px;
+    height: 0px;
+    left: 52px;
+    top: 364px;
+    border: 1px solid #2F3E53;
+}
+
+.suggestions{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    /* identical to box height, or 200% */
+    text-align: center;
+    color: #55F991;
+}
+.suggested-pass1{
+    position: absolute;
+    width: 211px;
+    height: 39px;
+    left: 52px;
+    top: 399px;
+    background: #273549;
+    border-radius: 6px;
+}
+
+.suggested-pass2{
+    position: absolute;
+    width: 211px;
+    height: 39px;
+    left: 287px;
+    top: 399px;
+
+    background: #273549;
+    border-radius: 6px;
+}
+
+.suggested-pass3{
+    position: absolute;
+    width: 211px;
+    height: 39px;
+    left: 52px;
+    top: 465px;
+    background: #273549;
+    border-radius: 6px;
+}
+
+.suggested-pass4{
+    position: absolute;
+    width: 211px;
+    height: 39px;
+    left: 287px;
+    top: 465px;
+    background: #273549;
+    border-radius: 6px;
+}
